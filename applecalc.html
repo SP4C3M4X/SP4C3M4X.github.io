@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .calc{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        background-color:black;
+        padding:15px;
+        width:350px;
+        border-radius:50px;
+
+    }
+    #display{
+        text-align: right;
+        font-size:70px;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    button{
+        background-color: purple;
+        padding:5px;
+        margin:5px;
+        border-radius:70px;
+        width:80px;
+        height:80px;
+        color:white;
+        font-size:30px;
+        border:1px solid black;
+    }
+</style>
+<body>
+    <div class="calc">
+    <div id="display" style="grid-column:1 /span 4; background-color:black;height:100px;border-radius:50px;"></div>
+    <button style="background-color:rgb(171, 169, 169);">AC</button>
+    <button style="background-color:rgb(171, 169, 169);">+/-</button>
+    <button class = "hide" style="background-color:rgb(171, 169, 169);">%</button>
+    <button  id ="divide" style="background-color:orange;">&divide</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B7()">7</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B8()">8</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B9()">9</button>
+    <button class = "hide" style="background-color:orange;">x</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B4()">4</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B5()">5</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B6()">6</button>
+    <button class = "hide" style="background-color:orange;">-</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B1()">1</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B2()">2</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B3()">3</button>
+    <button class = "hide" style="background-color:orange;">+</button>
+    <button style="grid-column:1/span 2;width:165px;background-color: rgb(70, 68, 68);"onclick="B0()">0</button>
+    <button style="background-color: rgb(70, 68, 68);"onclick="B11()">.</button>
+    <button id = "solve" style="background-color:orange;"onclick="calculate()">=</button>
+    </div>
+
+    <script>
+        function B1(){
+            var txt="1"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+           
+        }
+
+        function B2(){
+            var txt="2"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B3(){
+            var txt="3"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B4(){
+            var txt="4"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B5(){
+            var txt="5"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B6(){
+            var txt="6"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B7(){
+            var txt="7"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B8(){
+            var txt="8"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B9(){
+            var txt="9"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B0(){
+            var txt="0"
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+
+        function B11(){
+            var txt="."
+            var displayElement = document.getElementById("display");
+            displayElement.innerHTML+= txt;
+        }
+        function operations(){
+            var txt=""
+            if(document.getElementsByClassName("")=="hide"){
+                txt+= document.getElementById("display") + document.getElementsByClassName("hide")
+
+            }
+        }
+        function calculate(){
+            let inputbox = document.getElementById("display");
+            equal = document.getElementsByClassName("solve")
+        }
+    </script>
+</body>
+</html>
