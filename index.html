@@ -3,139 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-<style>
-    .calc{
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-        background-color:black;
-        padding:15px;
-        width:350px;
-        border-radius:50px;
-
-    }
-    #display{
-        text-align: right;
-        font-size:70px;
-        color:white;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    
-    button{
-        background-color: purple;
-        padding:5px;
-        margin:5px;
-        border-radius:70px;
-        width:80px;
-        height:80px;
-        color:white;
-        font-size:30px;
-        border:1px solid black;
-    }
-</style>
+<link rel="stylesheet" href="folio.css">
 <body>
-    <div class="calc">
-    <div id="display" style="grid-column:1 /span 4; background-color:black;height:100px;border-radius:50px;"></div>
-    <button style="background-color:rgb(171, 169, 169);">AC</button>
-    <button style="background-color:rgb(171, 169, 169);">+/-</button>
-    <button class = "hide" style="background-color:rgb(171, 169, 169);">%</button>
-    <button  id ="divide" style="background-color:orange;">&divide</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B7()">7</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B8()">8</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B9()">9</button>
-    <button class = "hide" style="background-color:orange;">x</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B4()">4</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B5()">5</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B6()">6</button>
-    <button class = "hide" style="background-color:orange;">-</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B1()">1</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B2()">2</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B3()">3</button>
-    <button class = "hide" style="background-color:orange;">+</button>
-    <button style="grid-column:1/span 2;width:165px;background-color: rgb(70, 68, 68);"onclick="B0()">0</button>
-    <button style="background-color: rgb(70, 68, 68);"onclick="B11()">.</button>
-    <button id = "solve" style="background-color:orange;"onclick="calculate()">=</button>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four">!</div>
+    <div id="five">?</div>
+    <div id="six">!=</div>
+    <div id="sev">&lt/></div>
+    <div id="eight">&lta></div>
+    <div id="nine">&ltp></div>
+    
+
+    <div id="main">
+        <div id="mess">Hi there! I am</div>
+        <div id="mess1">Gerald<br>Danquah</div>
+        <div id="mess2">A fullstack </div>
+        <div id="mess3">Developer</div>
+        <button id="b1"><a href="#About">About me</a></button>
+        <button id="b2"><a href="#project">Projects</a></button>
+        <button id="b3"><a href="#Contact">Contact</a></button>
     </div>
-
+    <div style="position:absolute;top:98%;height:20px;width:100%;background-image:linear-gradient(rgb(22, 0, 46),white);z-index:3;margin:0px;"></div>
+    <div style="position:absolute;top:100%;width:100%;height:100%;background-color: white;z-index:2;">
+        <div id="About">About Me</div>
+        <div data-aos="fade-up-right" id="self"><h1>Myself<br></h1><p>Born and raised in Ghana by two amazing parents, I'm a 19 year old upcoming passionate software developer determined to be the best in my field</p></div>
+        <div data-aos="fade-up-left" id="edu"><h1>Education<br></h1><p>I am a high school graduate currently pursuing a diploma in software development at one of the most prominent IT institution in the contry (Openlabs Ghana)</p></div>
+        <div data-aos="fade-up-right" id="int"><h1>Interests<br></h1><p>I love to code, play video games, listen to music and enjoy sceneries. I also have keen interests in the world of tech and astronomy</p></div>
+        <div data-aos="fade-up-left" id="amb"><h1>Ambitions<br></h1><p>I aspire to become one of, if not the best in my field of programming which is desktop app, web app and web development</p></div>
+    </div>
+    <div style="position:absolute;top:200%;width:100%;height:100%;background-color:white;z-index:2;">
+        <h1 id="project">Here are some projects I worked on</h1>
+        <a id="image" href="https://github.com/SP4C3M4X/Image_viewer" data-aos="fade-right">An image wiewer I made with python</a>
+        <a id="samp" href="https://github.com/SP4C3M4X/Sample-login-registration-page" data-aos="fade-left">Sample login and registration page</a>
+    </div>
+    <div style="position:absolute;top:300%;width:100%;height:100px;background-color:rgb(214, 212, 212);z-index:2;">
+        <p id="Contact">Contact: 059-500-8757</p>
+        <p id="mail">Email: geraldasuasadanquah@gmail.com</p>
+        <p id="social">Find me on:</p>
+        <p id="whats"><i class="fa-brands fa-whatsapp"></i> Whatsapp: 059-500-8757</p>
+        <p id="git"><i class="fa-brands fa-github"></i> Github: SP4C3M4X</p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        function B1(){
-            var txt="1"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-           
-        }
-
-        function B2(){
-            var txt="2"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B3(){
-            var txt="3"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B4(){
-            var txt="4"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B5(){
-            var txt="5"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B6(){
-            var txt="6"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B7(){
-            var txt="7"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B8(){
-            var txt="8"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B9(){
-            var txt="9"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B0(){
-            var txt="0"
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-
-        function B11(){
-            var txt="."
-            var displayElement = document.getElementById("display");
-            displayElement.innerHTML+= txt;
-        }
-        function operations(){
-            var txt=""
-            if(document.getElementsByClassName("")=="hide"){
-                txt+= document.getElementById("display") + document.getElementsByClassName("hide")
-
-            }
-        }
-        function calculate(){
-            let inputbox = document.getElementById("display");
-            equal = document.getElementsByClassName("solve")
-        }
+        AOS.init();
     </script>
 </body>
-</html>
+</html
