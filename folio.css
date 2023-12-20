@@ -1,0 +1,351 @@
+body{
+    background-color:rgb(22, 0, 46);
+    margin:0px;
+    padding:0px;
+}
+#one{
+    position:absolute;
+    left:8%;
+    top:6%;
+    height:120px;
+    width:120px;
+    border-radius: 80px;
+    background-color:rgb(205, 5, 65);
+    z-index:1;
+}
+#two{
+    position:absolute;
+    left:20%;
+    top:75%;
+    height:210px;
+    width:210px;
+    border-radius: 100px;
+    background-color:rgb(205, 5, 65);
+    z-index:1;
+}
+#three{
+    position:absolute;
+    left:82%;
+    top:32%;
+    height:170px;
+    width:170px;
+    border-radius: 100px;
+    background-color:rgb(205, 5, 65);
+    z-index:1;
+}
+#four{
+    position:absolute;
+    left:45%;
+    font-size:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 50deg;
+    color:white;
+    opacity:50%;
+}
+#five{
+    position:absolute;
+    top:80%;
+    left:62%;
+    font-size:210px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 215deg;
+    color:white;
+    opacity:50%;
+}
+#six{
+    position:absolute;
+    top:35%;
+    left:5%;
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 341deg;
+    color:white;
+    opacity:50%;
+}
+#sev{
+    position:absolute;
+    top:84%;
+    left:5%;
+    font-size:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 45deg;
+    color:white;
+    opacity:50%;
+}
+#eight{
+    position:absolute;
+    top:74%;
+    left:85%;
+    font-size:70px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 130deg;
+    color:white;
+    opacity:50%;
+}
+#nine{
+    position:absolute;
+    top:14%;
+    left:85%;
+    font-size:70px;
+    font-family: Arial, Helvetica, sans-serif;
+    rotate: 330deg;
+    color:white;
+    opacity:50%;
+}
+#main{
+    position: absolute;
+    background-image: linear-gradient(90deg,rgb(42, 7, 83), rgb(205, 5, 65));
+    height: 600px;
+    width:1020px;
+    left:15%;
+    top:9%;
+    border-radius:40px;
+    box-shadow:0px 0px 30px black;
+    z-index:2;
+}
+#mess{
+    position:absolute;
+    top:30%;
+    left:3%;
+    color:white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mess1{
+    position:absolute;
+    top:35%;
+    left:3%;
+    color:white;
+    font-size:80px;
+    font-family:Fiver regular;
+}
+#mess2{
+    position:absolute;
+    top: 62%;
+    left:3%;
+    color:white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mess3{
+    position:absolute;
+    top: 62%;
+    left:14%;
+    color:white;
+    font-size: 20px;
+    font-family:Bugaki;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+#b1{
+    position:absolute;
+    left:4%;
+    size:20px;
+    background-color:rgb(205, 5, 65);
+    color:white;
+    border-style: none;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    transition:0.5s;
+}
+#b2{
+    position:absolute;
+    left:15%;
+    background:transparent;
+    color: white;
+    margin-left:5px;
+    border-style: none;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    transition:0.5s;
+}
+#b3{
+    position:absolute;
+    left:25%;
+    background:transparent;
+    color: white;
+    margin-left:5px;
+    border-style: none;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    transition:0.5s;
+}
+#b1:hover{
+    text-shadow:0px 0px 10px white;
+}
+#b1:active{
+    background-color:rgb(200, 43, 90);
+}
+#b2:hover{
+    text-shadow:0px 0px 10px white;
+}
+#b2:active{
+    background-color:rgba(128, 128, 128, 0.559);
+}
+#b3:hover{
+    text-shadow:0px 0px 10px white;
+}
+#b3:active{
+    background-color:rgba(128, 128, 128, 0.559);
+}
+#About{
+    position: absolute;
+    top:-4%;
+    left:33%;
+    font-size: 100px;
+    text-align: center;
+    padding:20px;
+    font-family:milgran;
+}
+
+#self{
+    position:absolute;
+    top:15%;
+    left:10%;
+    height:250px;
+    width:450px;
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+    text-align:center;
+    padding:10px;
+    transition:0.2s;
+    font-family:milgran;
+}
+#self:hover{
+    height:255px;
+    width:455px;
+    border-radius:25px;
+    box-shadow:0px 0px 20px grey;
+}
+#edu{
+    position:absolute;
+    top:15%;
+    left:65%;
+    height:250px;
+    width:450px;
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+    text-align:center;
+    padding:10px;
+    transition:0.2s;
+    font-family:milgran;
+}
+#edu:hover{
+    height:255px;
+    width:455px;
+    border-radius:25px;
+    box-shadow:0px 0px 20px grey;
+}
+#int{
+    position:absolute;
+    top:60%;
+    left:10%;
+    height:250px;
+    width:450px;
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+    text-align:center;
+    text-wrap:balance;
+    padding:10px;
+    transition:0.2s;
+    font-family:milgran;
+}
+/* #moon{
+    filter:blur(5px);
+} */
+#int:hover{
+    height:255px;
+    width:455px;
+    border-radius:25px;
+    box-shadow:0px 0px 20px grey;
+}
+#amb{
+    position:absolute;
+    top:60%;
+    left:65%;
+    height:250px;
+    width:450px;
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+    text-align:center;
+    text-wrap:balance;
+    padding:10px;
+    transition:0.2s;
+    font-family:milgran;
+}
+#amb:hover{
+    height:255px;
+    width:455px;
+    border-radius:25px;
+    box-shadow:0px 0px 20px grey;
+}
+P{
+    font-family:sans-serif;
+}
+#project{
+    position:absolute;
+    left:27%;
+    font-size:40px;
+    font-family:milgran;
+}
+#Contact{
+    position:absolute;
+    left:5%;
+}
+#mail{
+    position:absolute;
+    top:35%;
+    left:5%;
+}
+#social{
+    position: absolute;
+    left:30%;
+}
+#image{
+    position:absolute;
+    top:20%;
+    left:10%;
+    text-align: center;
+    font-size:20px;
+    padding:20px;
+    height:50px;
+    width:300px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    transition:0.2s;
+}
+#image:hover{
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+}
+#samp{
+    position:absolute;
+    top:20%;
+    left:60%;
+    text-align: center;
+    font-size:20px;
+    padding:20px;
+    height:50px;
+    width:300px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    transition:0.2s;
+}
+#samp:hover{
+    border-radius:30px;
+    box-shadow:0px 0px 10px grey;
+}
+#whats{
+    position:absolute;
+    left:36%;
+}
+#git{
+    position:absolute;
+    top:35%;
+    left:36%;
+}
